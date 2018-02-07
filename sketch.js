@@ -50,7 +50,7 @@ function draw() {
   background(0);
 
   // 10% chance of new food
-  if (random(1) < 0.1) {
+  if (random(1) < 0.2) {
     food.push(createVector(random(width), random(height)));
   }
 
