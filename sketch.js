@@ -21,7 +21,7 @@ var debug;
 function setup() {
 
   // Add canvas and grab checkbox
-  var canvas = createCanvas(800, 600);
+  var canvas = createCanvas(1000, 600);
   canvas.parent('canvascontainer');
   debug = select('#debug');
 

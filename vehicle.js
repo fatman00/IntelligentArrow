@@ -24,14 +24,15 @@ function Vehicle(x, y, dna) {
     for (var i = 0; i < dna.length; i++) {
       // 10% chance of mutation
       if (random(1) < 0.1) {
-        if (i < 2) {
-          // Adjust steering force weights
-          this.dna[i] = dna[i] + random(-0.2, 0.2);
-
-        } else {
-          // Adjust perception radius
-          this.dna[i] = dna[i] + random(-10, 10);
-        }
+        this.dna[i]*=random(-0.1, 0.1);
+        // if (i < 2) {
+        //   // Adjust steering force weights
+        //   this.dna[i] = dna[i] + random(-0.2, 0.2);
+        //
+        // } else {
+        //   // Adjust perception radius
+        //   this.dna[i] = dna[i] + random(-10, 10);
+        // }
         // Copy DNA
       } else {
         this.dna[i] = dna[i];
